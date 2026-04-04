@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Mahjong-1.0";
 const contentToCache = [
     "Build/aplication.loader.js",
-    "Build/aplication.framework.js",
-    "Build/aplication.data",
-    "Build/aplication.wasm",
+    "Build/aplication.framework.js.unityweb",
+    "Build/aplication.data.unityweb",
+    "Build/aplication.wasm.unityweb",
     "TemplateData/style.css"
 
 ];

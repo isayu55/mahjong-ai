@@ -60,9 +60,9 @@
       var loaderUrl = buildUrl + "/aplication.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/aplication.data",
-        frameworkUrl: buildUrl + "/aplication.framework.js",
-        codeUrl: buildUrl + "/aplication.wasm",
+        dataUrl: buildUrl + "/aplication.data.unityweb",
+        frameworkUrl: buildUrl + "/aplication.framework.js.unityweb",
+        codeUrl: buildUrl + "/aplication.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Mahjong",
@@ -100,8 +100,7 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-            loadingBar.style.display = "none";
-            window.myUnityInstance = unityInstance;
+          loadingBar.style.display = "none";
         }).catch((message) => {
           alert(message);
         });
