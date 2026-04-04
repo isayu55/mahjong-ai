@@ -100,7 +100,8 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-          loadingBar.style.display = "none";
+            loadingBar.style.display = "none";
+            window.myUnityInstance = unityInstance;
         }).catch((message) => {
           alert(message);
         });
